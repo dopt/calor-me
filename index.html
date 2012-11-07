@@ -8,16 +8,17 @@
     <title>Calor-me! Calor-you! Calor-rifitastical!</title>
     <link rel="stylesheet" href="css/calor-me.css" type="text/css">
     <script type="text/javascript" src="js/calor-me.js" async></script>
+	
   </head>
   <body>
     <nav aria-role="navigation">
       <menu type="toolbar" aria-role="tablist">
         <a href="#summary" aria-role="tab" aria-selected="true"
-          aria-controls="summary">Summary</a><a
+          aria-controls="summary" class='tab_css'>Summary</a><a
           href="#log" aria-role="tab" aria-selected="false"
-          aria-controls="log">Log</a><a
+          aria-controls="log" class='tab_css'>Log</a><a
           href="#settings" aria-role="tab" aria-selected="false"
-          aria-controls="settings">Settings</a>
+          aria-controls="settings" class='tab_css'>Settings</a>
       </menu>
     </nav>
     <div>
@@ -36,16 +37,17 @@
             </div>
           </div>
           <div class="add-data-group" aria-role="group">
-            <button class="addFood" id="showFoodForm"><span
-                class="sign">+</span> Food</button>
+            <button class="addFood" id="showFoodForm" ><span
+                class="sign">+</span></button>
             <button class="addActivity" id="showActivityForm"><span
-                class="sign">-</span> Exercise</button>
+                class="sign">-</span></button>
           </div>
           <label>
             Weight
-            <input type="number" name="weight" value="70" placeholder="e.g. 65">
+            <input type="number" name="weight" value="70" placeholder="e.g. 65" style='width:100px;'>
             kg
           </label>
+		  
         </form>
         <!-- This "overlay container" div is presentational.
              There doesn't seem to a neat way of covering all the rest of the
@@ -116,6 +118,7 @@
             <time datetime="2012-10-12">12 Oct</time>,
             <data class="calorie-balance under" value="-200">-200 kCal</data>
           </summary>
+		  
           <div class="log-entry plus">
             <span class="food">Hamburger</span>
             <data class="quantity" value="1">1</data>
@@ -168,6 +171,9 @@
         <source src="audio/fall.ogg" type="audio/ogg">
         <source src="audio/fall.wav" type="audio/wave">
       </audio>
+	  <audio id='tabSwitchSound' preload="auto">
+		<source src="audio/fall.wav" type="audio/wave">
+	  </audio>
     </div>
   </body>
 </html>
