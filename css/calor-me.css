@@ -318,3 +318,50 @@ details * {
 	border-style:inset;
 	color:black;
 }
+
+@media screen and (max-width: 1024px){
+	body{
+		font-size:17px;
+	}
+}
+@media screen and (max-height: 768px){
+	body{
+		font-size:17px;
+	}
+	button.addFood{
+		height:100px;width:180px;
+	}
+	button.addActivity{
+		height:100px;width:180px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	body{
+		font-size:13px;
+	}
+}
+@media screen and (max-height: 480px){
+	button.addFood{
+		height:70px;width:120px;
+	}
+	button.addActivity{
+		height:70px;width:120px;
+	}
+	body{
+		font-size:13px;
+	}
+}
+
+@media screen and (orientation:landscape){
+	button.addFood{
+		position:relative;
+		top:-130px;
+		left:-50px;
+	}
+	button.addActivity{
+		position:relative;
+		top:-130px;
+		left:50px;
+	}
+}
